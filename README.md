@@ -53,15 +53,15 @@ cd python-projects-tasks/projectX
 
 
 ## Goals of This Repository
-The primary goals of this repository are:
 
-### Skill Development: To practice and enhance my Python programming skills by working on a variety of projects and tasks.
-### Portfolio Building: To create a collection of work that demonstrates my abilities to potential employers or collaborators.
-### Learning Resource: To provide a resource for others to learn from and contribute to.
+The primary goals of this repository are:
+- Skill Development: To practice and enhance my Python programming skills by working on a variety of projects and tasks.
+- Portfolio Building: To create a collection of work that demonstrates my abilities to potential employers or collaborators.
+- Learning Resource: To provide a resource for others to learn from and contribute to.
 
 ## Technologies Used
-### Python: The primary language used for all projects and tasks in this repository.
-### Git/GitHub: For version control and collaboration.
+- Python: The primary language used for all projects and tasks in this repository.
+- Git/GitHub: For version control and collaboration.
 
 ## Future Plans
   - Continuously update the repository with new projects, tasks, and assignments.
