@@ -73,4 +73,4 @@ Contributions are welcome! If you have a project, task, or improvement to sugges
 This repository is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
-If you have any questions, suggestions, or feedback, feel free to reach out to me at info.midrees@gmail.com.
+If you have any questions, suggestions, or feedback, feel free to reach out to me at my new main info.midrees@gmail.com or old mail midrees4040@gmail.com.
