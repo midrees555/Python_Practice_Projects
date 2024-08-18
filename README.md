@@ -44,7 +44,7 @@ Each folder contains:
 To get started with any project or task:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/python-projects-tasks.git
+   git clone https://github.com/midrees555/python-small-projects.git
 
 2. Navigate to the folder of the project or task you're interested in:
 cd python-projects-tasks/projectX
@@ -69,7 +69,7 @@ The primary goals of this repository are:
   - Collaborate with others to expand the repository's content and usefulness.
 
 ## Contributing
-  - Contributions are welcome! If you have a project, task, or improvement to suggest, please fork the repository, make your changes, and submit a pull request. Let's learn and grow together!
+Contributions are welcome! If you have a project, task, or improvement to suggest, please fork the repository, make your changes, and submit a pull request. Let's learn and grow together!
 
 ## License
 This repository is licensed under the MIT License. See the LICENSE file for more details.
