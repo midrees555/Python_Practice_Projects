@@ -9,21 +9,21 @@ Welcome to the **Python Small Projects** repository! This repository is a collec
 The repository is organized into subdirectories, each representing a different project, task, or assignment. Here’s a general structure of the repository:
 
 python-projects-tasks/
-│
-├── project1/
-│ ├── project_script.py
-│ └── README.md
-│
-├── task1/
-│ ├── task_script.py
-│ └── README.md
-│
-├── assignment1/
-│ ├── assignment_solution.py
-│ └── README.md
-│
-└── ...
-
+|
+|___ project1/
+|  |___ project-script.py
+|  |___ README.md
+|
+|___ task1/
+|  |___ task_script.py
+|  |___ README.md
+|
+|___ assignment1/
+|  |___ assignment_solution.py
+|  |___ README.md
+|
+|
+└--- ...
 
 - **`projectX/`**: Each `projectX` folder contains a specific Python project. These projects may range from small utilities to larger applications.
 - **`taskX/`**: Each `taskX` folder contains a coding task or exercise. These are often focused on practicing specific Python concepts or solving particular problems.
