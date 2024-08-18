@@ -22,6 +22,7 @@ The repository is organized into subdirectories, each representing a different p
 ....
 ....
 
+#### Explain The Structure
 - **`projectX/`**: Each `projectX` folder contains a specific Python project. These projects may range from small utilities to larger applications.
 - **`taskX/`**: Each `taskX` folder contains a coding task or exercise. These are often focused on practicing specific Python concepts or solving particular problems.
 - **`assignmentX/`**: Each `assignmentX` folder contains solutions to programming assignments. These may include exercises from online courses, coding challenges, or academic work.
