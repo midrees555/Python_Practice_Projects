@@ -1,65 +1,83 @@
-# Greetings
-print("\nWelcome To Addition of Two Matrics Program\n\n")
+# Initialize empty lists to store the matrices
+listOne = []
+listTwo = []
 
-# Initilizing two empty lists
-matric_A = []
-matric_B = []
-result_matric = []
+# Function to get a positive integer input from the user
+def get_positive_integer(prompt):
+    while True:
+        try:
+            value = int(input(prompt))
+            if value <= 0:
+                print("Please input a positive integer\n")
+                continue
+            return value
+        except ValueError:
+            print("Invalid input! Please try again\n")
 
+# Get the number of rows and columns from the user
+numberOfRows = get_positive_integer("\nEnter number of Rows:\n")
+numberOfCols = get_positive_integer("Enter number of Columns:\n")
 
+# Function to input values into two matrices A and B
+def inputValue(A, B, rows, cols):
+    # Input values for Matrix A
+    print("\n\nMatrix A:")
+    for row in range(rows):
+        current_row = []
+        for col in range(cols):
+            value = int(input(f"\nEnter value for A[{row}][{col}]:\n"))
+            current_row.append(value)
+        A.append(current_row)
 
+    # Input values for Matrix B
+    print("\n\nMatrix B:")
+    for row in range(rows):
+        current_row = []
+        for col in range(cols):
+            value = int(input(f"\nEnter value for B[{row}][{col}]:\n"))
+            current_row.append(value)
+        B.append(current_row)
+
+# Function to add two matrices P and Q
+def add_matrices(P, Q):
+    # Check if matrices have the same dimensions
+    if len(P) != len(Q) or len(P[0]) != len(Q[0]):
+        print("\nError: Matrices must have the same dimensions to be added.\n")
+        return None
     
-def sum_two_matric(matric_A, matric_B, result_matric):
-    for rows in matric_A:
-        for col in rows:
-            result_matric[col] = matric_A[col] + matric_B[col]
+    # Initialize the result matrix
+    result = []
 
-    return result_matric
+    # Add corresponding elements of matrices P and Q
+    for i in range(len(P)):
+        new_row = []
+        for j in range(len(P[0])):
+            new_row.append(P[i][j] + Q[i][j])
+        result.append(new_row)
 
+    return result
 
-def show_result(result_matric):
-    for rows in matric_A:
-        for col in rows:
-            print(result_matric[col], end = ", ")
-        
+# Function to display matrices and their addition result
+def showResult(X, Y):
+    # Display Matrix A
+    print("\nMatrix A:")
+    for row in X:
+        print("  ".join(str(element) for element in row))
+
+    # Display Matrix B
+    print("\nMatrix B:")
+    for row in Y:
+        print("  ".join(str(element) for element in row))
+
+    # Calculate and display the result of adding Matrix A and Matrix B
+    print("\n\nResultant Matrix (A + B):\n")
+    result = add_matrices(X, Y)
+
+    if result:  # Check if the addition was successful
+        for row in result:
+            print("  ".join(str(element) for element in row))
         print("\n")
 
-
-# Function to checks continuesly Process status
-def process_status(process_stat):
-    """function, who ask the user whether user wants to continue the process or exit"""
-    process_stat = process_stat.lower()
-
-    if process_stat in ['y', 'yes']:
-        return False
-    elif process_stat in ['n', 'no']:
-        return True
-    else:
-        print("\nInvalid choice! Try again\n")
-        return None
-
-
-while True:
-    num_of_rows = int(input("\nEnter number of Rows...\n"))
-    num_of_col = int(input("Enter number of Columns...\n"))
-    # Asking user to specify orders of a matrics if user wants to continue the process
-    processStatus = input("Continue process? (Y/YES or N/NO)\n").split()
-    continueProcess = process_status(processStatus)
-
-
-    if num_of_rows <= 0 or num_of_col <= 0:
-        print("\nNumber of Rows/Columns can't be zero\n")
-
-    elif num_of_rows == num_of_col:
-        pass
-        # Inputing Matric - A values from users
-
-        # Inputing Matric - B values from users
-
-        # Adding Matric - A & Matric - B
-
-        # Showing result
-    else:
-        pass
-
-
+# Main execution
+inputValue(listOne, listTwo, numberOfRows, numberOfCols)  # Get matrix inputs
+showResult(listOne, listTwo)  # Display matrices and their sum
