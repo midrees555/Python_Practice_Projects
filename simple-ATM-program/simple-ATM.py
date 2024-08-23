@@ -1,6 +1,7 @@
 # Small Project: Simple ATM
 # This program simulates a simple ATM with basic features like deposit, withdrawal, and balance inquiry.
 
+
 def user_info():
     """
     Collects and displays user information.
@@ -41,7 +42,9 @@ def withdrawal(current_balance):
                 continue
 
             if withdrawal_amount > current_balance:
-                print(f"Sorry, current balance Rs {current_balance:.2f} is less than the requested amount Rs {withdrawal_amount:.2f}\nPlease re-enter amount.\n")
+                print(
+                    f"Sorry, current balance Rs {current_balance:.2f} is less than the requested amount Rs {withdrawal_amount:.2f}\nPlease re-enter amount.\n"
+                )
                 continue
 
             print(f"Rs {withdrawal_amount:.2f} withdrawn successfully\n")
@@ -117,7 +120,8 @@ def main():
         elif request == 3:
             checking_current_balance(actual_current_balance)
 
-        continue_process = input("Go to Main Menu? (Y for yes or N for no)\n").strip()
+        continue_process = input(
+            "Go to Main Menu? (Y for yes or N for no)\n").strip()
         continue_process_stat = check_process_status(continue_process)
         if not continue_process_stat:
             break
