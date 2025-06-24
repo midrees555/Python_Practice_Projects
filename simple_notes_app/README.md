@@ -62,7 +62,7 @@ python notes_app.py
 ```bash
 my-notes-app/
 ├── my_simple_notes_app_file.txt   # Your saved notes
-├── notes_app.py                   # Main Python script
+├── simple_notes_app.py            # Main Python script
 └── README.md                      # Project documentation
 ```
 
